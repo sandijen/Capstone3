@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite">
+    <test name="test1" enabled="false">
+        <classes>
+
+            <class name="testcases.RegistrationPageTest"></class>
+        </classes>
+    </test>
+
+    <test name="test2" enabled="false">
+        <classes>
+            <class name="testcases.LoginPageTest"/>
+
+        </classes>
+    </test>
+    <test name="test3" enabled="false">
+        <classes>
+            <class name="testcases.SearchProductPageTest"/>
+
+        </classes>
+    </test>
+    <test name="test4" enabled="false">
+        <classes>
+
+            <class name="testcases.AddToCartPageTest"/>
+
+        </classes>
+    </test>
+
+<test name="test5" enabled="false">
+<classes>
+
+    <class name="testcases.CheckOutPageTest"/>
+
+</classes>
+</test>
+    <test name="test6" enabled="true">
+        <classes>
+
+            <class name="testcases.GiftCardPageTest"/>
+
+        </classes>
+    </test>
+
+
+</suite>
