@@ -6,6 +6,10 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+
+
+
+
 public class SelectBrowser {
 
     static WebDriver driver;
@@ -22,6 +26,7 @@ public class SelectBrowser {
         else if (browsername.equalsIgnoreCase("Chrome")) {
             // Set the path for chromedriver.exe
             System.setProperty("webdriver.chrome.driver", "C:\\Users\\shakya\\Capstone\\chromedriver.exe");
+
 
             driver = new ChromeDriver();
         }

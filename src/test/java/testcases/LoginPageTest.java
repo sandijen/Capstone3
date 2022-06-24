@@ -88,7 +88,7 @@ public class LoginPageTest {
         FileUtils.copyFile(file,new File("src/test/resources/Screenshot/Login.png"));
 
         String actualmessage=registration1.getErrorMessage();
-        String expected = "SorrySorry! Please try that again";
+        String expected = "Sorry! Please try that again.";
         Assert.assertEquals(expected,actualmessage);
 
     }
