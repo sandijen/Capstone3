@@ -24,13 +24,13 @@ public class AddToCart {
 
     By backtoaddcartbutton= By.xpath("//header/div[1]/div[1]/div[2]/div[2]/a[1]");
 
-    By cleartozero= By.xpath("//input[@id='updates_41195469897781']");
+
 
     By checkoutfield=By.xpath("//span[contains(text(),'Checkout')]");
 
-    By giftcardfield= By.cssSelector("#checkout_reduction_code");
 
-    By applygiftcardfield= By.xpath("//button[@id='checkout_submit']");
+
+
 
     By bodyfield= By.cssSelector("body");
 
@@ -87,27 +87,7 @@ public class AddToCart {
         driver.findElement(updatecartbutton).click();
     }
 
-    public void clickquantity()
-    {
-        driver.findElement(cleartozero).click();
-    }
-
-    public void clickoncheckout()
-    {
-        driver.findElement(checkoutfield).click();
-    }
-
-    public void inputgiftcardinfo(String arg)
-    {
-        driver.findElement(giftcardfield).sendKeys(arg);
-    }
-
-    public void clickonapplygiftcard()
-    {
-        driver.findElement(applygiftcardfield).click();
-    }
-
-    public void body()
+       public void body()
     {
         driver.findElement(bodyfield).click();
     }

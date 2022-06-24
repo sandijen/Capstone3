@@ -63,17 +63,17 @@ public class CheckOutPageTest {
         checkOutPage.addtothecartoncheckout();
         Thread.sleep(3000);
         checkOutPage.addcartcheckout();
-        Thread.sleep(3000);
+        Thread.sleep(10000);
     }
 
     @Test(priority = 2)
     public void paymentForm() throws InterruptedException, IOException {
         test = extent.createTest("creditcard  testcase", "Test Passed");
 
-        checkOutPage.paymentfilloutblank();
-        Thread.sleep(3000);
+        checkOutPage.InvalidPayment();
+        Thread.sleep(5000);
         checkOutPage.FirstNameLastName();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         checkOutPage.AddressInfo();
         Thread.sleep(10000);
         checkOutPage.paymentInfo();

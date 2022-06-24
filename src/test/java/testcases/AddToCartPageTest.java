@@ -54,7 +54,7 @@ public class AddToCartPageTest {
         test = extent.createTest("verify product", "Test Passed");
         addToCart = new AddToCart(driver);
         addToCart.clickonproduct();
-        Thread.sleep(5000);
+        Thread.sleep(10000);
     }
 
     @Test(priority = 2)
@@ -62,6 +62,7 @@ public class AddToCartPageTest {
         test = extent.createTest("Add product to the cart", "Test Passed");
 
         addToCart = new AddToCart(driver);
+        Thread.sleep(3000);
         addToCart.productionDescription();
         Thread.sleep(3000);
 

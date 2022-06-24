@@ -10,12 +10,10 @@ public class CheckOutPage {
 
 
     By shopboxfield = By.xpath("//a[@id='navigation-shop']");
-
-    By colorbook = By.linkText("Color Recognition Early Education Cloth Book");
-
-    By colororange = By.xpath("//label[contains(text(),'Orange')]");
+    By bookField= By.xpath("//a[contains(text(),'Elephant Opposites Early Education Cloth Book')]");
 
     By addcartbox = By.xpath("//body[1]/div[3]/div[1]/section[1]/div[1]/div[2]/div[1]/form[1]/div[4]/input[1]");
+
 
     By topcartbox = By.xpath("//header/div[1]/div[1]/div[2]/div[2]/a[1]");
 
@@ -47,8 +45,8 @@ public class CheckOutPage {
 
     public void paymentsection() {
         driver.findElement(shopboxfield).click();
-        driver.findElement(colorbook).click();
-        driver.findElement(colororange).click();
+        driver.findElement(bookField).click();
+
 
     }
     public void addtothecartoncheckout() {
@@ -60,7 +58,7 @@ public class CheckOutPage {
         driver.findElement(topcartbox).click();
         driver.findElement(chckoutbox).click();
     }
-    public void paymentfilloutblank() {
+    public void InvalidPayment() {
         driver.findElement(emailfieldcheckout).sendKeys("sunitashakya@rocketmail.com");
 
     }

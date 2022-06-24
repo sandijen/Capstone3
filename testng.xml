@@ -20,7 +20,7 @@
 
         </classes>
     </test>
-    <test name="test4" enabled="false">
+    <test name="test4" enabled="true">
         <classes>
 
             <class name="testcases.AddToCartPageTest"/>
@@ -35,7 +35,7 @@
 
 </classes>
 </test>
-    <test name="test6" enabled="true">
+    <test name="test6" enabled="false">
         <classes>
 
             <class name="testcases.GiftCardPageTest"/>

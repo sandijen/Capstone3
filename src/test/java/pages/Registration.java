@@ -14,7 +14,7 @@ public class Registration {
    //
    // By SignUpRegister = By.xpath("//*[@id=\"create_customer\"]/div[5]/input");
     By SignUpRegister = By.xpath("/html/body/div[3]/div[2]/form/div[5]/input");
-     By errorMessage = By.id("errMsg");
+     By errorMessage = By.xpath("//p[contains(text(),'Sorry! Please try that again.')]");
     By loginButton= By.xpath("/html/body/div[3]/div[2]/div[1]/form/div[3]/input");
     By LoginEmail= By.name("customer[email]");
 

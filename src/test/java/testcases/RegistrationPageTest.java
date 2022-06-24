@@ -100,7 +100,7 @@ public class RegistrationPageTest {
         FileUtils.copyFile(file, new File("src/test/resources/Screenshot/RegistrationPage"));
         driver.quit();
 
-        String expected = "Your Apple ID or password was incorrect.";
+
 
     }
 
@@ -129,8 +129,11 @@ public class RegistrationPageTest {
         registration1.inputPassword("123");
         Thread.sleep(10000);
         registration1.ClickSignUpRegister();
-        Thread.sleep(10000);}}
+        Thread.sleep(10000);
 
+    String actualmessage= registration1.getErrorMessage();
+    String expected = "SorrySorry! Please try that again";
+        Assert.assertEquals(expected,actualmessage);}}
 
 
 
