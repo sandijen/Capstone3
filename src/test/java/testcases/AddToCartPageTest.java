@@ -49,7 +49,7 @@ public class AddToCartPageTest {
         driver.get("https://www.alexandnova.com/");
     }
 
-    @Test(priority = 1)
+    @Test(priority = 10)
     public void verifyProductPrices() throws InterruptedException {
         test = extent.createTest("verify product", "Test Passed");
         addToCart = new AddToCart(driver);
@@ -57,7 +57,7 @@ public class AddToCartPageTest {
         Thread.sleep(10000);
     }
 
-    @Test(priority = 2)
+    @Test(priority =11)
     public void addProductToCart() throws InterruptedException {
         test = extent.createTest("Add product to the cart", "Test Passed");
 
@@ -67,7 +67,7 @@ public class AddToCartPageTest {
         Thread.sleep(3000);
 
     }
-    @Test(priority=3)
+    @Test(priority=12)
     public void AddQuantity() throws InterruptedException {
         test = extent.createTest("Add Quanity", "Test Passed");
         addToCart.clickPageBox();
@@ -76,7 +76,7 @@ public class AddToCartPageTest {
 
     }
 
-    @Test(priority=4)
+    @Test(priority=13)
     public void refreshpage() throws InterruptedException {
         test = extent.createTest("RefreshPage", "Test Passed");
         driver.navigate().refresh();
@@ -85,7 +85,7 @@ public class AddToCartPageTest {
         Thread.sleep(5000);
     }
 
-    @Test(priority = 5)
+    @Test(priority = 14)
     public void UpdateQuantity() throws InterruptedException {
         test = extent.createTest("UpdateQuantity", "Test Passed");
         addToCart.clearCart();
@@ -96,7 +96,7 @@ public class AddToCartPageTest {
 
     }
 
-    @Test(priority = 6)
+    @Test(priority = 15)
     public void removeItemFromCart() throws InterruptedException {
         test = extent.createTest("Remove Items", "Test Passed");
         addToCart.clearCart();

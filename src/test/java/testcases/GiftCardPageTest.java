@@ -53,7 +53,7 @@ public class GiftCardPageTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         driver.get("https://www.alexandnova.com/");
     }
-        @Test
+        @Test (priority = 16)
                 public void ApplyGiftCard() throws InterruptedException, IOException {
             test = extent.createTest("giftcard validation testcase", "Test Passed");
             giftCardPage= new GiftCardPage(driver);

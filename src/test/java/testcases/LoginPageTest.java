@@ -54,7 +54,7 @@ public class LoginPageTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(35));
         driver.get("https://www.alexandnova.com/");
     }
-        @Test(priority = 2)
+        @Test(priority = 7)
 
     public void Positive_login() throws IOException, InterruptedException {
             test = extent.createTest("valid user id testcase", "Test Passed");
@@ -70,7 +70,7 @@ public class LoginPageTest {
 
             driver.close();
     }
-    @Test(priority = 1)
+    @Test(priority = 6)
 
     public void Login_With_Wrong_Password() throws IOException, InterruptedException {
         test = extent.createTest("wrong password user id testcase", "Test Passed");

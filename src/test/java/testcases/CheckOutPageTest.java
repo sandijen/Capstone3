@@ -53,7 +53,7 @@ public class CheckOutPageTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         driver.get("https://www.alexandnova.com/");
     }
-    @Test(priority = 1)
+    @Test(priority = 17)
     public void givepaymentoption() throws InterruptedException {
         test = extent.createTest("give payment option", "Test Passed");
 
@@ -66,7 +66,7 @@ public class CheckOutPageTest {
         Thread.sleep(10000);
     }
 
-    @Test(priority = 2)
+    @Test(priority = 18)
     public void paymentForm() throws InterruptedException, IOException {
         test = extent.createTest("creditcard  testcase", "Test Passed");
 

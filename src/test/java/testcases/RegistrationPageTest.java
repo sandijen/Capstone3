@@ -56,6 +56,7 @@ public class RegistrationPageTest {
 
     @Test(priority = 1)
     public void NewUserRegistrationPage() throws InterruptedException {
+        test = extent.createTest("New Regisgtration", "Test Passed");
         registration1 = new Registration(driver);
         registration1.clickAccount();
         registration1.clickRegister();
@@ -65,6 +66,7 @@ public class RegistrationPageTest {
     @Test(priority = 2)
 
     public void VerifyRegisterNewUser() throws InterruptedException {
+        test = extent.createTest("Verify registration", "Test Passed");
         registration1 = new Registration(driver);
         Thread.sleep(10000);
         registration1.clickAccount();
@@ -82,6 +84,7 @@ public class RegistrationPageTest {
 
     @Test(priority = 3)
     public void EmailValidation() throws IOException, InterruptedException {
+        test = extent.createTest("ValidateEmail", "Test Passed");
         registration1 = new Registration(driver);
         Thread.sleep(10000);
         registration1.clickAccount();
@@ -106,6 +109,7 @@ public class RegistrationPageTest {
 
     @Test(priority = 4)
     public void Register_without_mandatory_field() throws InterruptedException, IOException {
+        test = extent.createTest("InvalidRegistration", "Test Passed");
         registration1 = new Registration(driver);
         registration1.clickAccount();
         Thread.sleep(30000);
@@ -117,6 +121,7 @@ public class RegistrationPageTest {
     }
     @Test(priority = 5)
     public void PasswordValidation() throws IOException, InterruptedException {
+        test = extent.createTest("PassValidation", "Test Passed");
         registration1 = new Registration(driver);
         Thread.sleep(10000);
         registration1.clickAccount();
@@ -133,7 +138,16 @@ public class RegistrationPageTest {
 
     String actualmessage= registration1.getErrorMessage();
     String expected = "SorrySorry! Please try that again";
-        Assert.assertEquals(expected,actualmessage);}}
+        Assert.assertEquals(expected,actualmessage);
+
+
+    }
+    @AfterSuite
+
+    public void tearDown()
+    {
+        extent.flush();
+    }}
 
 
 
