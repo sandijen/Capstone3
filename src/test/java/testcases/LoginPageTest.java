@@ -87,6 +87,10 @@ public class LoginPageTest {
         File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(file,new File("src/test/resources/Screenshot/Login.png"));
 
+        String actualmessage=registration1.getErrorMessage();
+        String expected = "SorrySorry! Please try that again";
+        Assert.assertEquals(expected,actualmessage);
+
     }
     @AfterSuite
 
